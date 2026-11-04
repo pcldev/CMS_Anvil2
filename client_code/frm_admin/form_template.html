@@ -1,0 +1,69 @@
+<anvil-form layout="Dark_Noise.frm_home">
+  <anvil-block slot="main_slot">
+    <anvil-component type="GridPanel" name="grd_user_permissions">
+      <anvil-component type="Label" name="lbl_user_im_add" prop:text="Add IM Access" container:col_xs="0" container:row="HSPPZV" container:width_xs="2"></anvil-component>
+      <anvil-component type="DropDown" name="drop_user_im_add" prop:include_placeholder="true" prop:placeholder="please select..." container:col_xs="1" container:row="HSPPZV" container:width_xs="4"></anvil-component>
+      <anvil-component type="Button" name="btn_user_im_add" prop:text="Add IM Access" container:col_xs="7" container:row="HSPPZV" container:width_xs="3"></anvil-component>
+      <anvil-component type="Label" name="lbl_user_im_remove" prop:text="Remove IM Access" container:col_xs="0" container:row="KRCKMI" container:width_xs="2"></anvil-component>
+      <anvil-component type="DropDown" name="drop_user_im_remove" prop:include_placeholder="true" prop:placeholder="please select..." container:col_xs="2" container:row="KRCKMI" container:width_xs="4"></anvil-component>
+      <anvil-component type="Button" name="btn_user_im_remove" prop:text="Remove IM Access" container:col_xs="7" container:row="KRCKMI" container:width_xs="3"></anvil-component>
+      <anvil-component type="Label" name="lbl_user_qc_add" prop:text="Add QC Access" container:col_xs="0" container:row="OMJFFU" container:width_xs="2"></anvil-component>
+      <anvil-component type="DropDown" name="drop_user_qc_add" prop:include_placeholder="true" prop:placeholder="please select..." container:col_xs="2" container:row="OMJFFU" container:width_xs="4"></anvil-component>
+      <anvil-component type="Button" name="btn_user_qc_add" prop:text="Add QC Access" container:col_xs="7" container:row="OMJFFU" container:width_xs="3"></anvil-component>
+      <anvil-component type="Label" name="lbl_user_qc_remove" prop:text="Remove QC Access" container:col_xs="0" container:row="PBVXWG" container:width_xs="2"></anvil-component>
+      <anvil-component type="DropDown" name="drop_user_qc_remove" prop:include_placeholder="true" prop:placeholder="please select..." container:col_xs="2" container:row="PBVXWG" container:width_xs="4"></anvil-component>
+      <anvil-component type="Button" name="btn_user_qc_remove" prop:text="Remove QC Access" container:col_xs="7" container:row="PBVXWG" container:width_xs="3"></anvil-component>
+      <anvil-component type="Label" name="lbl_user_optio_add" prop:text="Add Optio Access" container:col_xs="0" container:row="LCAGGP" container:width_xs="2"></anvil-component>
+      <anvil-component type="DropDown" name="drop_user_optio_add" prop:include_placeholder="true" prop:placeholder="please select..." container:col_xs="2" container:row="LCAGGP" container:width_xs="4"></anvil-component>
+      <anvil-component type="Button" name="btn_user_optio_add" prop:text="Add Optio Access" container:col_xs="7" container:row="LCAGGP" container:width_xs="3"></anvil-component>
+      <anvil-component type="Label" name="lbl_user_optio_remove" prop:text="Remove Optio Access" container:col_xs="0" container:row="JREERT" container:width_xs="2"></anvil-component>
+      <anvil-component type="DropDown" name="drop_user_optio_remove" prop:include_placeholder="true" prop:placeholder="please select..." container:col_xs="2" container:row="JREERT" container:width_xs="4"></anvil-component>
+      <anvil-component type="Button" name="btn_user_optio_remove" prop:text="Remove Optio Access" container:col_xs="7" container:row="JREERT" container:width_xs="3"></anvil-component>
+      <anvil-component type="Label" name="lbl_user_admin_add" prop:text="Add Admin Access" container:col_xs="0" container:row="TOGTSF" container:width_xs="2"></anvil-component>
+      <anvil-component type="DropDown" name="drop_user_admin_add" prop:include_placeholder="true" prop:placeholder="please select..." container:col_xs="2" container:row="TOGTSF" container:width_xs="4"></anvil-component>
+      <anvil-component type="Button" name="btn_user_admin_add" prop:text="Add Admin Access" container:col_xs="7" container:row="TOGTSF" container:width_xs="3"></anvil-component>
+      <anvil-component type="Label" name="lbl_user_admin_remove" prop:text="Remove Admin Access" container:col_xs="0" container:row="XUPEPT" container:width_xs="2"></anvil-component>
+      <anvil-component type="DropDown" name="drop_user_admin_remove" prop:include_placeholder="true" prop:placeholder="please select..." container:col_xs="2" container:row="XUPEPT" container:width_xs="4"></anvil-component>
+      <anvil-component type="Button" name="btn_user_admin_remove" prop:text="Remove Admin Access" container:col_xs="7" container:row="XUPEPT" container:width_xs="3"></anvil-component>
+    </anvil-component>
+    <anvil-component type="Spacer" name="spacer_one" prop:height="32"></anvil-component>
+    <anvil-component type="GridPanel" name="grd_templates">
+      <anvil-component type="Label" name="lbl_report_spot" prop:text="Spot Report " container:col_xs="0" container:row="THSJGE" container:width_xs="2"></anvil-component>
+      <anvil-component type="TextBox" name="txt_report_spot" container:col_xs="2" container:row="THSJGE" container:width_xs="5"></anvil-component>
+      <anvil-component type="Button" name="btn_spot_save" prop:text="Save" container:col_xs="7" container:row="THSJGE" container:width_xs="3"></anvil-component>
+      <anvil-component type="Label" name="lbl_report_os" prop:text="OS Report" container:col_xs="0" container:row="WIZDXJ" container:width_xs="2"></anvil-component>
+      <anvil-component type="TextBox" name="txt_report_os" container:col_xs="2" container:row="WIZDXJ" container:width_xs="5"></anvil-component>
+      <anvil-component type="Button" name="btn_os_save" prop:text="Save" container:col_xs="7" container:row="WIZDXJ" container:width_xs="3"></anvil-component>
+      <anvil-component type="Label" name="lbl_report_story" prop:text="Story" container:col_xs="0" container:row="MJBMXE" container:width_xs="2"></anvil-component>
+      <anvil-component type="TextBox" name="txt_report_story" container:col_xs="2" container:row="MJBMXE" container:width_xs="5"></anvil-component>
+      <anvil-component type="Button" name="btn_story_save" prop:text="Save" container:col_xs="7" container:row="MJBMXE" container:width_xs="3"></anvil-component>
+    </anvil-component>
+    <anvil-component type="Spacer" name="spacer_two" prop:height="32"></anvil-component>
+    <anvil-component type="GridPanel" name="grd_team">
+      <anvil-component type="Label" name="lbl_team_add" prop:text="Add Team" container:col_xs="0" container:row="YLWMGF" container:width_xs="2"></anvil-component>
+      <anvil-component type="TextBox" name="txt_team_add" container:col_xs="2" container:row="YLWMGF" container:width_xs="5"></anvil-component>
+      <anvil-component type="Button" name="btn_team_add" prop:text="Add Team" container:col_xs="7" container:row="YLWMGF" container:width_xs="3"></anvil-component>
+      <anvil-component type="Label" name="lbl_team_remove" prop:text="Remove Team" container:col_xs="0" container:row="VEFWTX" container:width_xs="2"></anvil-component>
+      <anvil-component type="DropDown" name="drop_team_remove" prop:include_placeholder="true" prop:placeholder="please select..." container:col_xs="2" container:row="VEFWTX" container:width_xs="5"></anvil-component>
+      <anvil-component type="Button" name="btn_team_remove" prop:text="Remove Team" container:col_xs="7" container:row="VEFWTX" container:width_xs="3"></anvil-component>
+    </anvil-component>
+    <anvil-component type="GridPanel" name="grd_tags">
+      <anvil-component type="Label" name="lbl_add_tag" prop:text="Add Tag" container:col_xs="0" container:row="APDWBC" container:width_xs="2"></anvil-component>
+      <anvil-component type="TextBox" name="txt_add_tag" container:col_xs="2" container:row="APDWBC" container:width_xs="5"></anvil-component>
+      <anvil-component type="Button" name="btn_add_tag" prop:text="Add Tag" container:col_xs="8" container:row="APDWBC" container:width_xs="1"></anvil-component>
+      <anvil-component type="Label" name="lbl_remove_tag" prop:text="Remove Tag" container:col_xs="0" container:row="TAGRMV" container:width_xs="2"></anvil-component>
+      <anvil-component type="DropDown" name="drop_remove_tag" prop:include_placeholder="true" prop:placeholder="please select..." container:col_xs="2" container:row="TAGRMV" container:width_xs="5"></anvil-component>
+      <anvil-component type="Button" name="btn_remove_tag" prop:text="Remove Tag" container:col_xs="7" container:row="TAGRMV" container:width_xs="3"></anvil-component>
+    </anvil-component>
+    <anvil-component type="Spacer" name="spacer_three" prop:height="32"></anvil-component>
+    <anvil-component type="Label" name="lbl_audit_log_header" prop:bold="true" prop:font_size="19" prop:text="Audit Log"></anvil-component>
+    <anvil-component type="ColumnPanel" name="col_audit_log">
+      <anvil-component type="RepeatingPanel" name="panel_audit_log" prop:item_template="Dark_Noise.frm_admin.row_template_log"></anvil-component>
+    </anvil-component>
+    <anvil-component type="Label" name="lbl_audit_log_empty" prop:icon="fa:inbox" prop:role="empty-state" prop:text="No audit log entries yet." prop:visible="false"></anvil-component>
+    <anvil-component type="FlowPanel" name="flow_audit_log_pagination">
+      <anvil-component type="Button" name="btn_audit_log_prev" prop:enabled="false" prop:text="< Previous"></anvil-component>
+      <anvil-component type="Button" name="btn_audit_log_next" prop:enabled="false" prop:text="Next >"></anvil-component>
+    </anvil-component>
+  </anvil-block>
+</anvil-form>

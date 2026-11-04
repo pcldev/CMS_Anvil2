@@ -1,0 +1,118 @@
+components:
+- components:
+  - layout_properties: {col_xs: 0, row: YXNHVM, width_xs: 2}
+    name: lbl_report_name
+    properties: {text: Report Name}
+    type: Label
+  - layout_properties: {col_xs: 2, row: YXNHVM, width_xs: 4}
+    name: txt_report_name
+    properties: {align: left, enabled: false}
+    type: TextBox
+  - layout_properties: {col_xs: 7, row: YXNHVM, width_xs: 1}
+    name: lbl_type
+    properties: {text: Type}
+    type: Label
+  - layout_properties: {col_xs: 8, row: YXNHVM, width_xs: 4}
+    name: txt_type
+    properties: {enabled: false}
+    type: TextBox
+  - layout_properties: {col_xs: 0, row: SKCPIF, width_xs: 2}
+    name: lbl_title
+    properties: {text: Title}
+    type: Label
+  - layout_properties: {col_xs: 2, row: SKCPIF, width_xs: 4}
+    name: txt_title
+    properties: {}
+    type: TextBox
+  - layout_properties: {col_xs: 7, row: SKCPIF, width_xs: 1}
+    name: lbl_assigned_to
+    properties: {text: Assignee}
+    type: Label
+  - layout_properties: {col_xs: 8, row: SKCPIF, width_xs: 4}
+    name: txt_assigned_to
+    properties: {enabled: false}
+    type: TextBox
+  - layout_properties: {col_xs: 0, row: OXKKGX, width_xs: 2}
+    name: lbl_metadata
+    properties: {text: Add Metadata}
+    type: Label
+  - data_bindings: []
+    layout_properties: {col_xs: 1, row: OXKKGX, width_xs: 4}
+    name: chips_metadata
+    properties: {}
+    type: Dark_Noise.AutocompleteChips
+  - layout_properties: {col_xs: 7, row: OXKKGX, width_xs: 1}
+    name: lbl_im
+    properties: {text: 'IM '}
+    type: Label
+  - layout_properties: {col_xs: 0, row: GTCLSY, width_xs: 6}
+    name: txt_added_metadata
+    properties: {enabled: false, height: 45.984375, visible: false}
+    type: TextArea
+  - layout_properties: {col_xs: 8, row: OXKKGX, width_xs: 4}
+    name: txt_im
+    properties: {enabled: false}
+    type: TextBox
+  - layout_properties: {col_xs: 7, row: GTCLSY, width_xs: 1}
+    name: lbl_qc
+    properties: {text: QC}
+    type: Label
+  - layout_properties: {col_xs: 8, row: GTCLSY, width_xs: 4}
+    name: txt_qc
+    properties: {enabled: false}
+    type: TextBox
+  - layout_properties: {col_xs: 0, row: LJQTHA, width_xs: 3}
+    name: chk_im
+    properties: {text: IM Completed}
+    type: CheckBox
+  - layout_properties: {col_xs: 4, row: LJQTHA, width_xs: 3}
+    name: chk_rcm
+    properties: {text: RCM Completed}
+    type: CheckBox
+  layout_properties: {grid_position: 'UNPGDP,STRYNQ'}
+  name: grd_main
+  properties: {}
+  type: GridPanel
+- layout_properties: {grid_position: 'QMYHIB,LPIRJS'}
+  name: chk_hl_pipeline
+  properties: {text: Priority Report}
+  type: CheckBox
+- layout_properties: {grid_position: 'IJMBGW,IZLDOS'}
+  name: chk_send_to_qc
+  properties: {text: Send to QC}
+  type: CheckBox
+- components:
+  - layout_properties: {col_xs: 1, row: GNVEVE, width_xs: 3}
+    name: lbl_outputs
+    properties: {bold: true, font_size: 19, text: Outputs}
+    type: Label
+  - layout_properties: {col_xs: 0, row: VTTICC, width_xs: 2}
+    name: lbl_weekly
+    properties: {text: Weekly}
+    type: Label
+  - layout_properties: {col_xs: 2, row: VTTICC, width_xs: 10}
+    name: drop_outputs_weekly
+    properties: {width: '500'}
+    type: form:dep_eamshdxsp7hyjb:MultiSelectDropDown
+  - layout_properties: {col_xs: 0, row: SULAEY, width_xs: 2}
+    name: lbl_daily
+    properties: {text: Daily}
+    type: Label
+  - layout_properties: {col_xs: 2, row: SULAEY, width_xs: 10}
+    name: drop_outputs_daily
+    properties: {width: '500'}
+    type: form:dep_eamshdxsp7hyjb:MultiSelectDropDown
+  - layout_properties: {col_xs: 0, row: OIHAUY, width_xs: 2}
+    name: lbl_other
+    properties: {text: Other}
+    type: Label
+  - layout_properties: {col_xs: 2, row: OIHAUY, width_xs: 10}
+    name: drop_outputs_other
+    properties: {width: '500'}
+    type: form:dep_eamshdxsp7hyjb:MultiSelectDropDown
+  layout_properties: {grid_position: 'ROTHTP,XCSSAK'}
+  name: grd_outputs
+  properties: {visible: false}
+  type: GridPanel
+container: {type: ColumnPanel}
+is_package: true

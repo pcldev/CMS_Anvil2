@@ -1,0 +1,114 @@
+allow_embedding: false
+correct_dependency_ids: {dep_eamshdxsp7hyjb: C6ZZPAPN4YYF5NVJ}
+db_schema:
+  files:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: path
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: file
+      type: media
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: file_version
+      type: string
+    indexes: []
+    server: full
+    title: Files
+  users:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: email
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: true
+      name: enabled
+      type: bool
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: true
+      name: last_login
+      type: datetime
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: true
+      name: password_hash
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: true
+      name: n_password_failures
+      type: number
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: true
+      name: confirmed_email
+      type: bool
+    - admin_ui: {order: 6, width: 530}
+      client_hidden: true
+      name: remembered_logins
+      type: simpleObject
+    - admin_ui: {order: 7, width: 200}
+      client_hidden: true
+      name: signed_up
+      type: datetime
+    indexes: []
+    server: full
+    title: Users
+dependencies:
+- config:
+    client:
+      cdn: {value: true}
+  dep_id: dep_eamshdxsp7hyjb
+  resolution_hints: {app_id: C6ZZPAPN4YYF5NVJ, name: Anvil Extras, package_name: anvil_extras}
+  version: {version_tag: v3.6.3}
+metadata: {title: Content Management System}
+name: Clone of Dark Noise
+package_name: Dark_Noise
+renamed: true
+runtime_options:
+  client_version: '3'
+  legacy_features: {bootstrap3: true, class_names: true}
+  server_spec: {base: python310-minimal}
+  version: 3
+secrets:
+  MAILER_SEND:
+    type: secret
+    value: {LU6IYFKKEW5GUUWZ: d+ao+lP2xbyNOSzwatvDjoG/0Quiv3dnEINdwKIlsVKfplaYRy+ri1798TSGo2cabS3qCF6Hzfpfgdosd8HOgGST7/kDx4d6LVy3Xa7G8VxrbLOgAfzgBigkDHFLn5D+8Naa0hhxbSfNkdL7UNj//aB+cWhRaatAFkMq9Y7JnP9X4Xhfm94tfsFDmL/sD8FWNhZSiyX36q00aEMob2Alb2BSXTw=}
+  MONGO_DB:
+    type: secret
+    value: {LU6IYFKKEW5GUUWZ: 283dsvUZumsitnDDDjOLXOiCEQXte3Btx4hG0w6xPcuGmf7vskM2HsEx25qcbOFpx9Qbv5GIDy29gJjKHquF4d13M559ahHg/kQyqno4EmqVzTLOd+4+wW5E/UQCRjJy+ilgOEb+HlZM1c5qly4r}
+  SP_CLIENT_ID:
+    type: secret
+    value: {LU6IYFKKEW5GUUWZ: llz4bMKehJbRlO37AtqvQyJsCgZaDnSg5/YOj19sBas7ccPxIM76L6jMVY15bwYPoWETu1CBQ7L537zkpYWypeJlbWAeVExVTdWuigAg039adTTAnA5ILLecrDa0GvAT7lmxScZRiQ+B2IqVVYXcWQU2FcsRV6ldB0+IjiM1f3oXcg0=}
+  SP_CLIENT_SECRET:
+    type: secret
+    value: {LU6IYFKKEW5GUUWZ: MHzfSanrWW0Zf6WgLuz+kFCKiUnXUBagn39c07yW5xW+A5DPp9hPAOsmhMmP/prQAgz9yPNhjN9/3552Y0Jl/c/A1vvqdp0eM6JvNRh8K8WyOQzfjPig/Oku3whbBrBi310WaqN/T5trxbquFKpZaRofOiPqZxWB44W5qdRGSbFrq/SBf0Oa}
+  SP_TENANT_ID:
+    type: secret
+    value: {LU6IYFKKEW5GUUWZ: g2kKifV1b1//RZPIgPZJWB7izIJDLKAeP6LlU31t3NCqLgl+BBJddkZiznKmPHya4qPtu/fXAQuoykaG1T8YSN8lFYZx9hx6Vv8I75Hj0BbjiYdhiuwAR42z60ik0JGXDo1n35odMXf/S1EdiEytDg6oelmJvW6FhdKqfS75AVrDCsM=}
+  WORD_SYNC_API_KEY:
+    type: secret
+    value:
+      LU6IYFKKEW5GUUWZ: {? '' : F5+8T4Ml3mwKFfy0lwaqOlsigZGR7dHKVG5X+/Cy8Vm5eo8EQEBOmA0zl/Y8LQdvkt2F5gIrQxVYSeQF+QKoiQv4a10Smp02nMN0vv9O2T8DUFGkrIZ64WzWK5jRQQ4KhQEyhpDZvnq8KBxGaVUAQN43oQy/zN2lRgsB0f9BxCefyYyRSOwcjUnwlZdqrLTNhjpCftpcFNFeJnFUHhPY4rGctMbF6PI06+VR}
+services:
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/tables.yml
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/anvil/secrets.yml
+- client_config: {allow_remember_me: true, allow_signup: false, confirm_email: false, enable_automatically: true, remember_me_days: 30, use_email: false, use_microsoft: false, use_saml: true}
+  server_config: {user_table: users}
+  source: /runtime/services/anvil/users.yml
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/anvil/saml.yml
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/anvil/files.yml
+startup: {module: frm_login, type: form}
+startup_form: null
+uplink_visible: true

@@ -1,0 +1,19 @@
+---
+layout_metadata:
+  description: The CMS standard page
+  title: Homepage
+---
+<anvil-form container="HtmlTemplate" prop:html="@theme:standard-page.html">
+  <anvil-component type="ColumnPanel" name="content_panel" prop:col_widths='"{}"' container:slot="default">
+    <anvil-slot name="main_slot" container:full_width_row="true" container:grid_position="XCHJCO,AWJQVB"></anvil-slot>
+  </anvil-component>
+  <anvil-component type="FlowPanel" name="navbar_links" container:slot="nav-right">
+    <anvil-component type="Link" name="lnk_im" prop:text="IM View" prop:visible="true"></anvil-component>
+    <anvil-component type="Link" name="lnk_qc" prop:align="left" prop:text="QC View"></anvil-component>
+    <anvil-component type="Link" name="lnk_optio" prop:text="Optio View"></anvil-component>
+    <anvil-component type="Link" name="lnk_search" prop:text="Search"></anvil-component>
+    <anvil-component type="Link" name="lnk_admin" prop:text="Admin"></anvil-component>
+    <anvil-component type="Link" name="lnk_user_home" prop:text="User Configuration"></anvil-component>
+  </anvil-component>
+  <anvil-component type="Label" name="lbl_tile" prop:icon="" prop:text="CMS" container:slot="top-left-btn"></anvil-component>
+</anvil-form>

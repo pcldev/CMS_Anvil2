@@ -1,0 +1,16 @@
+<anvil-form layout="Dark_Noise.frm_home">
+  <anvil-block slot="main_slot">
+    <anvil-component type="GridPanel" name="grid_search_main" container:full_width_row="false">
+      <anvil-component type="Label" name="lbl_search" prop:bold="true" prop:text="Search Stories" container:col_xs="0" container:row="GGZZZS" container:width_xs="2"></anvil-component>
+      <anvil-component type="TextBox" name="txt_search" prop:placeholder="Search by name, title, country, assignee or team..." container:col_xs="1" container:row="GGZZZS" container:width_xs="4"></anvil-component>
+      <anvil-component type="Button" name="btn_search" prop:text="Search" container:col_xs="2" container:row="GGZZZS" container:width_xs="1"></anvil-component>
+    </anvil-component>
+    <div class="cms-section-card">
+        <anvil-component type="Label" name="lbl_results" prop:text="RESULTS" prop:role="title"></anvil-component>
+        <anvil-component type="DataGrid" name="dg_search_results" prop:columns='[{"data_key":"title","expand":true,"id":"JKSDUP","title":"Title","width":239.14306640625},{"data_key":"name","id":"VJQQOR","title":"Name"},{"data_key":"team","id":"OJLQEN","title":"Team"},{"data_key":"country","id":"CNTRYS","title":"Country"},{"data_key":"assignee","id":"EOOQVY","title":"Assigned To"},{"data_key":"status","id":"VPOGEH","title":"Status"},{"data_key":"column_5","expand":true,"id":"LMDIZB","title":"Link"},{"data_key":"column_6","expand":false,"id":"QZNMBS","title":"Add to Report","width":150}]'>
+          <anvil-component type="RepeatingPanel" name="panel_search_results" prop:item_template="Dark_Noise.frm_search.row_template_result"></anvil-component>
+        </anvil-component>
+        <anvil-component type="Label" name="lbl_empty_search" prop:icon="fa:inbox" prop:role="empty-state" prop:text="Search for a story by name, title, country, assignee or team." prop:visible="true"></anvil-component>
+    </div>
+  </anvil-block>
+</anvil-form>

@@ -1,0 +1,15 @@
+<anvil-form layout="Dark_Noise.frm_home">
+  <anvil-block slot="main_slot">
+    <anvil-component type="Label" name="lbl_dissemination" prop:text="DISSEMINATION"></anvil-component>
+    <anvil-component type="Label" name="lbl_priority" prop:text="PRIORITY REPORTING"></anvil-component>
+    <anvil-component type="DataGrid" name="dg_priority" prop:columns='[{"data_key":"team","id":"JKSDUP","title":"Team"},{"data_key":"country","id":"CNTRYA","title":"Country"},{"data_key":"name","id":"VJQQOR","title":"Name"},{"data_key":"created","id":"OJLQEN","title":"Created"},{"data_key":"assignee","id":"NZYYAZ","title":"Assigned To"},{"data_key":"type","id":"BWSNJP","title":"Type"},{"data_key":"document_link","id":"LCQATN","title":"Link"},{"data_key":"status","id":"WQUNGL","title":"Action"}]'>
+      <anvil-component type="RepeatingPanel" name="panel_priority" prop:item_template="Dark_Noise.frm_optio.RowTemplate3"></anvil-component>
+    </anvil-component>
+    <anvil-component type="Label" name="lbl_empty_priority" prop:icon="fa:inbox" prop:role="empty-state" prop:text="No priority reports pending." prop:visible="false"></anvil-component>
+    <anvil-component type="Label" name="lbl_routine" prop:text="ROUTINE REPORTING"></anvil-component>
+    <anvil-component type="DataGrid" name="dg_routine" prop:columns='[{"data_key":"team","id":"JKSDUP","title":"Team"},{"data_key":"country","id":"CNTRYB","title":"Country"},{"data_key":"name","id":"VJQQOR","title":"Name"},{"data_key":"created","id":"OJLQEN","title":"Created"},{"data_key":"assignee","id":"ETMSVY","title":"Assigned To"},{"data_key":"type","id":"OVZPVH","title":"Type"},{"data_key":"document_link","id":"MVCMEA","title":"Link"},{"data_key":"status","id":"WDVKGL","title":"Action"}]'>
+      <anvil-component type="RepeatingPanel" name="panel_routine" prop:item_template="Dark_Noise.frm_optio.RowTemplate4"></anvil-component>
+    </anvil-component>
+    <anvil-component type="Label" name="lbl_empty_routine" prop:icon="fa:inbox" prop:role="empty-state" prop:text="No routine reports pending." prop:visible="false"></anvil-component>
+  </anvil-block>
+</anvil-form>

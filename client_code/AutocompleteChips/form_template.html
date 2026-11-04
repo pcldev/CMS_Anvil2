@@ -1,0 +1,22 @@
+---
+custom_component: true
+events:
+- name: chips_changed
+  parameters:
+  - name: chips
+properties:
+- default_value: []
+  description: List of allowed values the user can select from
+  name: suggestions
+  type: object
+- default_value: []
+  description: Currently selected values as a list of strings
+  name: chips
+  type: object
+- default_value: Type to search...
+  description: Placeholder text shown in the autocomplete input
+  name: placeholder
+  type: string
+---
+<anvil-form container="FlowPanel">
+</anvil-form>

@@ -1,0 +1,23 @@
+<div class="cms-login-page">
+
+  <div anvil:dom-node="login_card" class="cms-login-card">
+    <div class="cms-login-wordmark">CMS</div>
+    <div class="cms-login-subtitle">Content Management System</div>
+    <div class="cms-login-divider"></div>
+    <button anvil:dom-node="btn_signin" anvil:on-dom:click="self.btn_signin_click" class="cms-signin-btn">
+      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="9" height="9" fill="#f25022"></rect>
+        <rect x="11" y="0" width="9" height="9" fill="#7fba00"></rect>
+        <rect x="0" y="11" width="9" height="9" fill="#00a4ef"></rect>
+        <rect x="11" y="11" width="9" height="9" fill="#ffb900"></rect>
+      </svg>
+      Sign in with Microsoft
+    </button>
+  </div>
+
+  <div anvil:dom-node="login_loading" class="cms-login-loading">
+    <div class="cms-login-spinner"></div>
+    <div class="cms-login-loading-text">Connecting to Microsoft…</div>
+  </div>
+
+</div>

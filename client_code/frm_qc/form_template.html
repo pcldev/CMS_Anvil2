@@ -1,0 +1,20 @@
+<anvil-form layout="Dark_Noise.frm_home">
+  <anvil-block slot="main_slot">
+    <anvil-component type="Label" name="label_1" prop:text="QC"></anvil-component>
+    <anvil-component type="Label" name="label_2" prop:text="SPOT REPORTING - PENDING"></anvil-component>
+    <anvil-component type="DataGrid" name="dg_spot" prop:columns='[{"data_key":"team","id":"JKSDUP","title":"Team"},{"data_key":"name","expand":false,"id":"VJQQOR","title":"Name","width":292.68658447265625},{"data_key":"created","id":"OJLQEN","title":"Created"},{"data_key":"assignee","id":"PKBBMQ","title":"Assigned To"},{"data_key":"type","id":"KLTDPN","title":"Type"},{"data_key":"document_link","id":"LCQATN","title":"Link"},{"data_key":"rcm_check","id":"AHIYDG","title":"RCM Check"},{"data_key":"im_check","id":"TWOFYJ","title":"IM Check"},{"data_key":"column_9","id":"UNMERQ","title":""},{"data_key":"column_10","id":"BPJTJB","title":""}]'>
+      <anvil-component type="RepeatingPanel" name="panel_spot" prop:item_template="Dark_Noise.frm_qc.row_template_spot"></anvil-component>
+    </anvil-component>
+    <anvil-component type="Label" name="lbl_empty_spot" prop:icon="fa:inbox" prop:role="empty-state" prop:text="No spot reports pending." prop:visible="false"></anvil-component>
+    <anvil-component type="Label" name="label_3" prop:text="PRIORITY REPORTING - PENDING"></anvil-component>
+    <anvil-component type="DataGrid" name="dg_priority" prop:columns='[{"data_key":"team","id":"JKSDUP","title":"Team"},{"data_key":"name","id":"VJQQOR","title":"Name"},{"data_key":"created","id":"OJLQEN","title":"Created"},{"data_key":"assignee","id":"UVAIPZ","title":"Assigned To"},{"data_key":"type","id":"ZLKVYY","title":"Type"},{"data_key":"document_link","id":"LCQATN","title":"Link"},{"data_key":"rcm_check","id":"JAFHAY","title":"RCM Check"},{"data_key":"im_check","id":"KSJMBU","title":"IM Check"},{"data_key":"column_9","id":"MYRSOI","title":""},{"data_key":"column_10","id":"UELEFU","title":""}]'>
+      <anvil-component type="RepeatingPanel" name="panel_priority" prop:item_template="Dark_Noise.frm_qc.row_template_priority"></anvil-component>
+    </anvil-component>
+    <anvil-component type="Label" name="lbl_empty_priority" prop:icon="fa:inbox" prop:role="empty-state" prop:text="No priority reports pending." prop:visible="false"></anvil-component>
+    <anvil-component type="Label" name="label_4" prop:text="OTHER - PENDING"></anvil-component>
+    <anvil-component type="DataGrid" name="dg_other" prop:columns='[{"data_key":"team","id":"JKSDUP","title":"Team"},{"data_key":"name","id":"VJQQOR","title":"Name"},{"data_key":"created","id":"OJLQEN","title":"Created"},{"data_key":"assignee","id":"KBHZLA","title":"Assigned To"},{"data_key":"type","id":"ZOBZVN","title":"Type"},{"data_key":"document_link","id":"LCQATN","title":"Link"},{"data_key":"rcm_check","id":"DKVKQI","title":"RCM Check"},{"data_key":"im_check","id":"EQPHYK","title":"IM Check"},{"data_key":"column_9","id":"YIHHQF","title":""},{"data_key":"column_10","id":"DPMCEH","title":""}]'>
+      <anvil-component type="RepeatingPanel" name="panel_other" prop:item_template="Dark_Noise.frm_qc.row_template_other"></anvil-component>
+    </anvil-component>
+    <anvil-component type="Label" name="lbl_empty_other" prop:icon="fa:inbox" prop:role="empty-state" prop:text="No other reports pending." prop:visible="false"></anvil-component>
+  </anvil-block>
+</anvil-form>
