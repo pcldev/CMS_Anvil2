@@ -1,4 +1,4 @@
-from ._anvil_designer import frm_imTemplate
+from ._anvil_designer import uTemplate
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
@@ -11,7 +11,7 @@ from ..dlg_assign_proofer import dlg_assign_proofer
 from ..dlg_process import dlg_process
 
 
-class frm_im(frm_imTemplate):
+class u(uTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)

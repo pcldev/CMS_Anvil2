@@ -65,7 +65,7 @@ dependencies:
   resolution_hints: {app_id: C6ZZPAPN4YYF5NVJ, name: Anvil Extras, package_name: anvil_extras}
   version: {version_tag: v3.6.3}
 metadata: {title: Content Management System}
-name: Clone of Dark Noise
+name: CMS [BETA 04.11]
 package_name: Dark_Noise
 renamed: true
 runtime_options:

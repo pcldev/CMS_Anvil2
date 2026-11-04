@@ -7,8 +7,8 @@
     </anvil-component>
     <div class="cms-section-card">
         <anvil-component type="Label" name="lbl_in_progress" prop:text="IN PROGRESS" prop:role="title"></anvil-component>
-        <anvil-component type="DataGrid" name="dg_in_progress" prop:columns='[{"data_key":"title","expand":true,"id":"JKSDUP","title":"Title","width":"200"},{"data_key":"name","id":"VJQQOR","title":"Name","width":"200","expand":true},{"data_key":"document_link","expand":false,"id":"OJLQEN","title":"Link","width":"125"},{"data_key":"assignee","id":"EOOQVY","title":"Assigned To","expand":true,"width":"125"},{"data_key":"im_check","id":"VPOGEH","title":"IM Check","width":"100"},{"data_key":"rcm_check","id":"IJNVDH","title":"RCM Check","width":"100"},{"data_key":"column_4","expand":false,"id":"LMDIZB","title":"Proofing","width":99.93310546875},{"data_key":"column_5","expand":false,"id":"QZNMBS","title":"Processing","width":122.559814453125}]'>
-          <anvil-component type="RepeatingPanel" name="panel_in_progress" prop:item_template="Dark_Noise.frm_im.row_template_in_progress"></anvil-component>
+        <anvil-component type="DataGrid" name="dg_in_progress" prop:columns='[{"data_key":"title","expand":true,"id":"JKSDUP","title":"Title","width":"200"},{"data_key":"name","id":"VJQQOR","title":"Name","width":"200","expand":true},{"data_key":"document_link","expand":false,"id":"OJLQEN","title":"Link","width":"125"},{"data_key":"assignee","id":"EOOQVY","title":"Assigned To","expand":true,"width":"125"},{"data_key":"im_check","id":"VPOGEH","title":"IM Check","width":"100"},{"data_key":"rcm_check","id":"IJNVDH","title":"RCM Check","width":"100"},{"data_key":"column_4","expand":false,"id":"LMDIZB","title":"Proofing","width":99.93310546875},{"data_key":"column_5","expand":false,"id":"QZNMBS","title":"Processing","width":122.559814453125}]' prop:visible="true">
+          <anvil-component type="RepeatingPanel" name="panel_in_progress" prop:item_template="Dark_Noise.u.row_template_in_progress"></anvil-component>
         </anvil-component>
         <anvil-component type="Label" name="lbl_empty_in_progress" prop:icon="fa:inbox" prop:role="empty-state" prop:text="No reports in progress. Select a team to load reports." prop:visible="false"></anvil-component>
     </div>
@@ -21,7 +21,7 @@
           <anvil-component type="Button" name="btn_weekly_process" prop:text="Process"></anvil-component>
         </anvil-component>
         <anvil-component type="DataGrid" name="dg_weekly" prop:columns='[{"data_key":"title","id":"JKSDUP","title":"Title"},{"data_key":"name","id":"VJQQOR","title":"Name"},{"data_key":"document_link","expand":true,"id":"OJLQEN","title":"Link"},{"data_key":"status","id":"SOLYLE","title":"Status"}]'>
-          <anvil-component type="RepeatingPanel" name="panel_input_weekly" prop:item_template="Dark_Noise.frm_im.RowTemplate1"></anvil-component>
+          <anvil-component type="RepeatingPanel" name="panel_input_weekly" prop:item_template="Dark_Noise.u.RowTemplate1"></anvil-component>
         </anvil-component>
     </div>
     <div class="cms-section-card">
@@ -33,7 +33,7 @@
           <anvil-component type="Button" name="btn_daily_process" prop:text="Process"></anvil-component>
         </anvil-component>
         <anvil-component type="DataGrid" name="dg_daily" prop:columns='[{"data_key":"title","id":"JKSDUP","title":"Title"},{"data_key":"name","id":"VJQQOR","title":"Name"},{"data_key":"document_link","id":"OJLQEN","title":"Link"},{"data_key":"status","id":"TQMGCG","title":"Status"}]'>
-          <anvil-component type="RepeatingPanel" name="panel_input_daily" prop:item_template="Dark_Noise.frm_im.RowTemplate2"></anvil-component>
+          <anvil-component type="RepeatingPanel" name="panel_input_daily" prop:item_template="Dark_Noise.u.RowTemplate2"></anvil-component>
         </anvil-component>
     </div>
     <div class="cms-section-card">
@@ -45,7 +45,7 @@
           <anvil-component type="Button" name="btn_other_process" prop:text="Process"></anvil-component>
         </anvil-component>
         <anvil-component type="DataGrid" name="dg_other" prop:columns='[{"data_key":"title","id":"JKSDUP","title":"Title"},{"data_key":"name","id":"VJQQOR","title":"Name"},{"data_key":"document_link","id":"OJLQEN","title":"Link"},{"data_key":"status","id":"YMFRWQ","title":"Status"}]'>
-          <anvil-component type="RepeatingPanel" name="panel_input_other" prop:item_template="Dark_Noise.frm_im.RowTemplate8"></anvil-component>
+          <anvil-component type="RepeatingPanel" name="panel_input_other" prop:item_template="Dark_Noise.u.RowTemplate8"></anvil-component>
         </anvil-component>
     </div>
   </anvil-block>
